@@ -1,1 +1,35 @@
-<p>side-menu works!</p>
+<ul class="list-group">
+  <!-- Se está utilizando un enlace de propiedad de entrada [routerLink] con un arreglo como valor "[item.route]". Esto generalmente se usa cuando el enlace es dinámico y se compone de varias partes. En este caso, item.route es una propiedad que contiene la ruta a la que debe apuntar el enlace. -->
+  <!-- Cuando se utiliza con un solo valor directamente [routerLink]="item.route" es cuando el enlace es una cadena simple y no necesita ser desglosado en partes separadas.  -->
+  <li
+    *ngFor="let item of menuItems"
+    [routerLink]="[item.route]"
+    routerLinkActive="active"
+    class="list-group-item"
+  >
+    {{ item.name }}
+  </li>
+</ul>
+
+<!-- ******************************************************************************************************************* -->
+<!-- La diferencia principal entre las dos formas radica en cómo se maneja el enlace de la propiedad [routerLink] y la estructura de datos asociada. -->
+<!--
+Uso de Arreglo [routerLink]="[item.route]":
+  - Este enfoque es útil cuando la ruta se compone de múltiples segmentos y se necesita proporcionar una matriz de partes de ruta.
+  - Cada elemento en la matriz item.route podría representar un segmento de la ruta.
+  - Ejemplo: [routerLink]="[item.route, 'subpath', 'subsubpath']"
+
+Uso de Valor Simple [routerLink]="item.route":
+  - Este enfoque es apropiado cuando la ruta es simplemente una cadena única y no necesita ser dividida en partes.
+  - Es más directo y legible si las rutas en menuItems son cadenas completas de las rutas.
+  - Ejemplo: [routerLink]="item.route"
+
+
+*** NOTAS: ***
+  ** Manejo de Rutas Dinámicas:
+    - Si tu aplicación maneja rutas dinámicas, donde algunas partes de la ruta pueden cambiar en función de ciertos criterios, el uso de un arreglo puede ser más flexible para construir dinámicamente la ruta.
+
+  ** Facilidad de Lectura y Mantenimiento:
+    - El uso de un arreglo puede hacer que el código sea más expresivo y fácil de entender, especialmente si las rutas son más complejas y tienen múltiples partes.
+    - El uso de un valor simple puede ser preferible cuando las rutas son simples y no cambian dinámicamente.
+ -->
