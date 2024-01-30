@@ -1,1 +1,27 @@
-<p>zoom-range-page works!</p>
+<!-- aquí se utiliza un id map y una referencia local map. El id será para aplicarle los estilos y la referencia local para colocar el mapa como tal -->
+<div #map id="map"></div>
+
+<div class="floating-range p-2">
+  <div class="floating-content">
+    <button class="btn btn-primary" (click)="zoomOut()">-</button>
+
+    <!-- con el (input)="zoomChanged(zoomInput.value)" es para lanzar un evento que disparará la función zoomChanged() que recibirá el valor del input por medio de la referencia local (porque no se está usando formularios reactivos ni por template) y esto es para que cuando se use la barra del rango de zoom entonces se haga el zoom al mapa -->
+    <input
+      type="range"
+      class="form-range px-2"
+      min="-2"
+      max="18"
+      [value]="currentZoom"
+      (input)="zoomChanged(zoomInput.value)"
+      #zoomInput
+    />
+
+    <button class="btn btn-primary" (click)="zoomIn()">+</button>
+  </div>
+
+  <span class="form-label">
+    Zoom: {{ currentZoom | number : "2.2-2" }}
+    <br />
+    Lng, Lat: {{ currentLngLat }}
+  </span>
+</div>
