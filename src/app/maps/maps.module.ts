@@ -8,6 +8,7 @@ import { MapsLayoutComponent } from './layout/maps-layout/maps-layout.component'
 import { FullScreenPageComponent } from './pages/full-screen-page/full-screen-page.component';
 import { MarkersPageComponent } from './pages/markers-page/markers-page.component';
 import { PropertiesPageComponent } from './pages/properties-page/properties-page.component';
+import { ZoomRangePageComponent } from './pages/zoom-range-page/zoom-range-page.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { PropertiesPageComponent } from './pages/properties-page/properties-page
     MapsLayoutComponent,
     FullScreenPageComponent,
     MarkersPageComponent,
-    PropertiesPageComponent
+    PropertiesPageComponent,
+    ZoomRangePageComponent
   ],
   imports: [
     CommonModule,
