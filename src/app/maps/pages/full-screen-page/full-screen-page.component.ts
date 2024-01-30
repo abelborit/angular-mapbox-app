@@ -47,3 +47,15 @@ Como con Angular trabajamos con componentes y modulos independientes, que podria
 
 Por eso, al usar el ViewChild, Angular ya se encarga de internamente identificar que ese elemento tiene ese identificador dentro del componente internamente, pero en el momento de desplegarlo, Angular le va a poner un identificador global distinto al resto pero haciendo por si mismo la referencia.
 */
+
+/* ******************************************************************************************************************* */
+/* ¿Las referencias locales del HTML las carga después de que las vistas son inicializadas? ¿Por qué Angular aún no contruye la referencia del mapa en el onInit? */
+/*
+Pues sí, en la mayoría de casos las referencias locales del HTML las carga después de que las vistas son inicializadas.
+
+El OnInit se ejecuta antes de que la vista esté completamente cargada, y no espera a esas referencias.
+
+Si tienes por ejemplo un simple data-bound (en el HTML mostrar una variable del TS) en el OnInit no deberías de tener problema de obtener ese valor y trabajar con él por ejemplo, ya que ahí sí está cargado.
+
+Pero al trabajar con referencias, lo ideal siempre es en el AfterViewInit para asegurarnos que la vista está completamente cargada y va a existir esa referencia.
+*/
