@@ -1,3 +1,47 @@
+# Angular & TypeScript - Angular Mapbox App
+
+---
+
+# Temas puntuales de la sección
+
+### ¿Qué veremos en esta sección?
+
+Los temas que se verán:
+
+- Manejo de librerías escritas en JavaScript en TypeScript
+- Uso de Mapas basados en Mapbox (el API es similar a la de Google Maps)
+- Marcadores
+- Eventos
+- FlyTo
+- Coordenadas geográficas
+- Componentes para re-utilización de mapas
+- Mantener objetos de forma persistente
+- @types
+- Zoom
+- Range
+
+Aunque el uso de mapas no es algo directamente relacionado con Angular, ya que todo se realiza mediante un objeto de una librería de terceros como en este caso con Mapbox, es interesante comprender cómo funcionan esas librerías dentro de Angular y cómo poder tener control de los objetos como si fueran propiedades de nuestras clases.
+
+### \* PASOS A REALIZAR:
+
+1. ejemplo
+2. ejemplo
+3. ejemplo
+
+### \* RECURSOS A USAR:
+
+- ejemplo
+- ejemplo
+- ejemplo
+
+### \* NOTAS:
+
+- ejemplo
+- ejemplo
+- ejemplo
+
+---
+
 # AngularMapboxApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
