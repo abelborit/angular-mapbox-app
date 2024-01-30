@@ -37,3 +37,13 @@ Cuando se usa una dependencia que está empaquetada con CommonJS, puede resultar
 Algunas soluciones en este post:
   - https://bobbyhadz.com/blog/angular-commonjs-or-amd-dependencies-can-cause-optimization-bailouts
 */
+
+/* ******************************************************************************************************************* */
+/* ¿Por qué cambiamos el id por la referencia local en el HTML y por qué no trabajamos con el id? Hemos cambiado el id="map" por un #map (referencia local) pero se supone que el ViewChild buscará el primer elemento del DOM que se llame map y lo cogerá para lo que le hayamos dicho en el código. Entonces si tenemos varios mapas ¿De qué nos sirve todo este cambio? Porque al final, si tenemos varios mapas en una misma pantalla, y todos se llaman #map por la referencia local ¿No van a chocar igual que cuando teníamos el id? */
+/*
+El caso es que puede que tengamos este componente repetido, o que simplemente haya otro elemento del DOM que tenga tambien ese mismo ID.
+
+Como con Angular trabajamos con componentes y modulos independientes, que podriamos reutilizar, si dejamos el id como tal, y otro componente tiene ese mismo id (ya sea porque reutilizamos el componente, o porque otra persona que este desarrollando en el mismo proyecto a puesto el mismo id a otro elemento del componente en el que él este trabajando), lo que va a pasar es que no se va a saber a cual de los identificadores (id) se esta señalando, porque estaria repetido.
+
+Por eso, al usar el ViewChild, Angular ya se encarga de internamente identificar que ese elemento tiene ese identificador dentro del componente internamente, pero en el momento de desplegarlo, Angular le va a poner un identificador global distinto al resto pero haciendo por si mismo la referencia.
+*/
