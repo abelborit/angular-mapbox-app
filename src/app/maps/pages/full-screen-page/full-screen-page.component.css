@@ -1,0 +1,6 @@
+#map {
+  /* si hay problemas para pantalla completa entonces descomentar el "position: absolute;" pero si funciona todo bien entonces borrarlo */
+  /* position: absolute; */
+  width: 100vw;
+  height: 100vh;
+}

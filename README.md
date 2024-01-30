@@ -24,20 +24,34 @@ Aunque el uso de mapas no es algo directamente relacionado con Angular, ya que t
 
 ### \* PASOS A REALIZAR:
 
-1. ejemplo
+1. Para usar Mapbox ir al círculo del perfil -> Documentation -> Mapbox GL JS (está abajo) -> GUIDES / Installation -> bajar un poco y hay dos formas de hacerlo: (si no usar este link https://docs.mapbox.com/mapbox-gl-js/guides/install/)
+
+   - Mapbox CDN: Instalarlo de forma global con un CDN
+   - Module bundler: Que es lo que tenemos en Angular ya que tenemos un empaquetador
+     - `npm install --save mapbox-gl` (si vamos a https://www.npmjs.com/package/mapbox-gl nos daremos cuenta que tiene el símbolo de DT que son los archivos de definición de TypeScript lo que quiere decir que no está escrito en TypeScript como tal. Entonces los paquetes de terceros que no estén escritos en TypeScript pero que tengan estos archivos de definición de TypeScript entonces nos permite usar estos paquetes en proyectos que usen TypeScript y nos permite tener su tipado estricto pero mediante sus Types)
+
 2. ejemplo
 3. ejemplo
 
 ### \* RECURSOS A USAR:
 
 - Bootstrap (CDN): https://getbootstrap.com/
+
   ```html
   <!-- Bootstrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   ```
+
 - dotenv: https://www.npmjs.com/package/dotenv
+
   - `npm i -D dotenv`
-- ejemplo
+
+- Mapbox Styles: https://docs.mapbox.com/mapbox-gl-js/guides/install/
+
+  ```html
+  <!-- Mapbox Styles -->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css" rel="stylesheet" />
+  ```
 
 ### \* NOTAS:
 
@@ -70,7 +84,7 @@ Aunque el uso de mapas no es algo directamente relacionado con Angular, ya que t
         },
       ```
 
-- ejemplo
+- Al colocar `import { Map } from 'mapbox-gl';` nos pedirá que instalemos los archivos de definición de TypeScript `npm i --save-dev @types/mapbox-gl`
 - ejemplo
 
 ---
