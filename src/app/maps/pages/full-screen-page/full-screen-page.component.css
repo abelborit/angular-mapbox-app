@@ -1,4 +1,5 @@
-#map {
+/* se cambió el #map por el div ya que como se quitó el id en el HTML entonces solo se coloca la etiqueta HTML como tal y como es el único div entonces no hay problema */
+div {
   /* si hay problemas para pantalla completa entonces descomentar el "position: absolute;" pero si funciona todo bien entonces borrarlo */
   /* position: absolute; */
   width: 100vw;
