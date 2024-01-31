@@ -7,6 +7,14 @@ const routes: Routes = [
     loadChildren: () =>
       import('./maps/maps.module').then((module) => module.MapsModule),
   },
+  /* al cargar un standalone component por lazyload se hace con loadComponent y se importa el componente/módulo a utilizar */
+  {
+    path: 'alone',
+    loadComponent: () =>
+      import('./standalone/pages/alone-page/alone-page.component').then(
+        (module) => module.AlonePageComponent
+      ),
+  },
   {
     path: '**',
     redirectTo: 'maps',
