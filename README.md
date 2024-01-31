@@ -22,6 +22,20 @@ Los temas que se verán:
 
 Aunque el uso de mapas no es algo directamente relacionado con Angular, ya que todo se realiza mediante un objeto de una librería de terceros como en este caso con Mapbox, es interesante comprender cómo funcionan esas librerías dentro de Angular y cómo poder tener control de los objetos como si fueran propiedades de nuestras clases.
 
+Esta otra parte de la sección tiene por objetivo explicar y usar esta nueva característica de Angular que son los **Standalone Components** que están desde la versión de Angular 14 (como Beta) y ya desde Angular 15 en adelante se puede usar de forma más estable, puntualmente veremos:
+
+- ¿Qué son?
+- ¿Para qué sirven?
+- ¿Cómo usarlos?
+- ¿Cómo cargarlos de forma perezosa?
+- ¿Cómo conectarlos entre sí?
+- ¿Cómo integrarlos en módulos y componentes tradicionales?
+
+Requisito:
+
+- Angular 14 > (Beta)
+- Angular 15+
+
 ### \* PASOS A REALIZAR:
 
 1. Para usar Mapbox ir al círculo del perfil -> Documentation -> Mapbox GL JS (está abajo) -> GUIDES / Installation -> bajar un poco y hay dos formas de hacerlo: (si no usar este link https://docs.mapbox.com/mapbox-gl-js/guides/install/)
