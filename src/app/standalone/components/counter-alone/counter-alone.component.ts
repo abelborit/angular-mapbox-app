@@ -9,8 +9,13 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./counter-alone.component.css'],
 })
 export class CounterAloneComponent {
-  @Input()
-  public counter2: number = 5;
+  /* FORMA 1 */
+  // @Input()
+  // public counter2: number = 5;
+
+  /* FORMA 2 */
+  @Input() counter2: number = 5;
+
   public counter: number = 0;
 
   handleIncreaseBy() {
