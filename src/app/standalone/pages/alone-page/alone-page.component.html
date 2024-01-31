@@ -1,1 +1,20 @@
-<p>alone-page works!</p>
+<div class="row mt-3">
+  <div class="col-2"></div>
+  <div class="col-10">
+    <h1>Standalone Component - Page</h1>
+    <hr />
+
+    <div class="row">
+      <div class="col">
+        <p>
+          Este componente no necesita ser importado en otros módulos porque es
+          su propio módulo y al ser una page entonces se cargará con lazyload
+          (también se puede cargar de manera tradicional)
+        </p>
+
+        <!-- Contador -->
+        <app-counter-alone [counter2]="10"></app-counter-alone>
+      </div>
+    </div>
+  </div>
+</div>
