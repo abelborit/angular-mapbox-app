@@ -1,0 +1,25 @@
+#map {
+  /* si hay problemas para pantalla completa entonces descomentar el "position: absolute;" pero si funciona todo bien entonces borrarlo */
+  /* position: absolute; */
+  width: 100vw;
+  height: 100vh;
+}
+
+ul {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.addBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
+
+.removeBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 80px;
+}
