@@ -85,7 +85,8 @@ Aunque el uso de mapas no es algo directamente relacionado con Angular, ya que t
       ```
 
 - Al colocar `import { Map } from 'mapbox-gl';` nos pedirá que instalemos los archivos de definición de TypeScript `npm i --save-dev @types/mapbox-gl`
-- ejemplo
+
+- Si hay problemas al hacer build como por ejemplo: `Error: bundle initial exceeded maximum budget. Budget 1.00 MB was not met by 200.74 kB with a total of 1.20 MB.` se puede revisar este link https://stackoverflow.com/questions/53995948/warning-in-budgets-maximum-exceeded-for-initial
 
 ---
 
