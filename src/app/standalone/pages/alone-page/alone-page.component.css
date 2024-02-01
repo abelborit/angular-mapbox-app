@@ -1,0 +1,10 @@
+standalone-side-menu {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
+  width: 150px;
+  background-color: rgba(50, 150, 50, 1);
+  border-radius: 10px;
+  padding: 5px;
+}

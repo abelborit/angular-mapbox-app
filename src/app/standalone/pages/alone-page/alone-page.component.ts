@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CounterAloneComponent } from '../../components/counter-alone/counter-alone.component';
+import { SideMenuComponent } from '../../components/side-menu/side-menu.component';
 
 /* al ser un standalone puede sobrevivir por sí mismo sin la necesidad de definirlo por ejemplo, sin importarlo en el app.module.ts entonces, es un archivo que está flotando en todo el proyecto de Angular. Se cargará aplicando lazyload aunque también se puede cargar de manera tradicional pero ahí sí es necesario importarlo en el app.module.ts */
 /* este standalone component se podría ver también como un módulo pero que solo tiene este componente y se puede utilizar de la misma forma en como se vino utilizando */
 @Component({
   selector: 'app-alone-page',
   standalone: true,
-  imports: [CommonModule, CounterAloneComponent],
+  imports: [CommonModule, CounterAloneComponent, SideMenuComponent],
   templateUrl: './alone-page.component.html',
   styleUrls: ['./alone-page.component.css'],
 })

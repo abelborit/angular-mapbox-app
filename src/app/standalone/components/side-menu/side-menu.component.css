@@ -1,4 +1,6 @@
 li {
   cursor: pointer;
+  color: #333;
+  font-weight: 600;
   transition: 0.2s all;
 }

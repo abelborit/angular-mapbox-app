@@ -1,8 +1,11 @@
-/* como en el HTML de maps-layout.component.html se está usando el selector de <maps-side-menu></maps-side-menu> o <maps-side-menu /> entonces es como si fuera otra etiqueta normal de HTML como por ejemplo si fuera un <span></span> y para CSS se puede usar tal cual ese nombre de selector para colocarle sus estilos */
-maps-side-menu {
+/* como en el HTML de maps-layout.component.html se está usando el selector de <standalone-side-menu></standalone-side-menu> o <standalone-side-menu /> entonces es como si fuera otra etiqueta normal de HTML como por ejemplo si fuera un <span></span> y para CSS se puede usar tal cual ese nombre de selector para colocarle sus estilos */
+standalone-side-menu {
   position: fixed;
   top: 20px;
   left: 20px;
   z-index: 9999;
-  /* width: 180px; */
+  width: 150px;
+  background-color: rgba(150, 50, 50, 1);
+  border-radius: 10px;
+  padding: 5px;
 }
